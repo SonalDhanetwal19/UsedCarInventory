@@ -1,0 +1,365 @@
+{
+    "info": {
+        "_postman_id": "41a8decd-8c5b-449a-93b7-c75b6ff495c4",
+        "name": "uci-collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "api/v1/used Cars",
+            "item": [
+                {
+                    "name": "http://localhost:8085/api/v1/usedCars",
+                    "id": "19a33803-528d-4b57-bdb9-a99e9e88960f",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [
+                                {
+                                    "key": "username",
+                                    "value": "<Basic Auth Username>",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "<Basic Auth Password>",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"carId\": 6,\n    \"vehicleType\": \"sedan\",\n    \"model\": \"zxi\",\n    \"company\": \"mercedes\",\n    \"price\": 5000000,\n    \"carName\": \"benz\",\n    \"bhp\": 2400,\n    \"engineCapacity\": \"2400cc\",\n    \"mileage\": 12,\n    \"kmRun\": 1000,\n    \"transmission\": \"manual\",\n    \"color\": \"white\",\n    \"seater\": 5,\n    \"location\": \"Doddanekundi\",\n    \"version\": \"petrol\",\n    \"owner\": \"efg\",\n    \"carStatus\": \"Sold Out\",\n    \"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/v1/usedCars",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "usedCars"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "87d3b266-dfc9-47f3-9c41-a952924435a2",
+                            "name": "Successful response",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"carId\": 6,\n    \"vehicleType\": \"sedan\",\n    \"model\": \"zxi\",\n    \"company\": \"mercedes\",\n    \"price\": 5000000,\n    \"carName\": \"benz\",\n    \"bhp\": 2400,\n    \"engineCapacity\": \"2400cc\",\n    \"mileage\": 12,\n    \"kmRun\": 1000,\n    \"transmission\": \"manual\",\n    \"color\": \"white\",\n    \"seater\": 5,\n    \"location\": \"Doddanekundi\",\n    \"version\": \"petrol\",\n    \"owner\": \"efg\",\n    \"carStatus\": \"Sold Out\",\n    \"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/v1/usedCars",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "usedCars"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "\"\""
+                        }
+                    ]
+                },
+                {
+                    "name": "http://localhost:8085/api/v1/usedCars",
+                    "id": "da3cc690-05da-4a79-ba6d-8504d42cb2fc",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [
+                                {
+                                    "key": "username",
+                                    "value": "<Basic Auth Username>",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "<Basic Auth Password>",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/v1/usedCars",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "usedCars"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "00685cba-664b-41d5-983b-75da555b3527",
+                            "name": "Successful response",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/v1/usedCars",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "usedCars"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "\"\""
+                        }
+                    ]
+                },
+                {
+                    "name": "http://localhost:8085/api/v1/usedCars/3",
+                    "id": "d7827107-1d65-45ae-9708-d86d3414b748",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [
+                                {
+                                    "key": "username",
+                                    "value": "<Basic Auth Username>",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "<Basic Auth Password>",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/v1/usedCars/3",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "usedCars",
+                                "3"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "7a3dc13a-13b8-4abc-a018-aaea25ed956d",
+                            "name": "Successful response",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/v1/usedCars/3",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "usedCars",
+                                        "3"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "\"\""
+                        }
+                    ]
+                },
+                {
+                    "name": "http://localhost:8085/api/v1/usedCars/5",
+                    "id": "0ce67fac-177f-4ab2-ac30-36696021998f",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [
+                                {
+                                    "key": "username",
+                                    "value": "<Basic Auth Username>",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "<Basic Auth Password>",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"carId\": 5,\n    \"vehicleType\": \"hatchback\",\n    \"model\": \"zxi\",\n    \"company\": \"hyundaib\",\n    \"price\": 500000,\n    \"carName\": \"i10\",\n    \"bhp\": 1200,\n    \"engineCapacity\": \"1200cc\",\n    \"mileage\": 12,\n    \"kmRun\": 1000,\n    \"transmission\": \"manual\",\n    \"color\": \"white\",\n    \"seater\": 5,\n    \"location\": \"Doddanekundi\",\n    \"version\": \"petrol\",\n    \"owner\": \"efg\",\n    \"carStatus\": \"Sold Out\",\n    \"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/v1/usedCars/5",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "usedCars",
+                                "5"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "d3619259-eb21-469d-b513-121b4ffd5422",
+                            "name": "Successful response",
+                            "originalRequest": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "description": "Added as a part of security scheme: basic",
+                                        "key": "Authorization",
+                                        "value": "Basic <credentials>"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"carId\": 5,\n    \"vehicleType\": \"hatchback\",\n    \"model\": \"zxi\",\n    \"company\": \"hyundaib\",\n    \"price\": 500000,\n    \"carName\": \"i10\",\n    \"bhp\": 1200,\n    \"engineCapacity\": \"1200cc\",\n    \"mileage\": 12,\n    \"kmRun\": 1000,\n    \"transmission\": \"manual\",\n    \"color\": \"white\",\n    \"seater\": 5,\n    \"location\": \"Doddanekundi\",\n    \"version\": \"petrol\",\n    \"owner\": \"efg\",\n    \"carStatus\": \"Sold Out\",\n    \"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/v1/usedCars/5",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "usedCars",
+                                        "5"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "cookie": [],
+                            "responseTime": null,
+                            "body": "\"\""
+                        }
+                    ]
+                }
+            ],
+            "id": "c2897ae1-267c-4862-88a7-1fdfff3ad8d0"
+        }
+    ],
+    "variable": [
+        {
+            "id": "aea57725-5a39-4566-b23e-f8c885318969",
+            "key": "baseUrl",
+            "value": "http://localhost:8085",
+            "type": "string"
+        }
+    ]
+}

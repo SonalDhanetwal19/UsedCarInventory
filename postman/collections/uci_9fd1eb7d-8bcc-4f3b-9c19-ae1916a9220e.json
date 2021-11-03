@@ -1,0 +1,199 @@
+{
+    "info": {
+        "_postman_id": "f5ce6af0-bd34-4655-82bc-80d0b5ec662b",
+        "name": "uci",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "http://localhost:8085/api/v1/usedCars/5",
+            "id": "b9cbaf94-10b7-4805-b5d8-f3c0de2e4ffc",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [
+                        {
+                            "key": "password",
+                            "value": "Admin",
+                            "type": "string"
+                        },
+                        {
+                            "key": "username",
+                            "value": "Admin",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n\"carId\": 5,\r\n\"vehicleType\": \"hatchback\",\r\n\"model\": \"zxi\",\r\n\"company\": \"hyundaic\",\r\n\"price\": 500000,\r\n\"carName\": \"i10\",\r\n\"bhp\": 1200,\r\n\"engineCapacity\": \"1200cc\",\r\n\"mileage\": 12,\r\n\"kmRun\": 1000,\r\n\"transmission\": \"manual\",\r\n\"color\": \"white\",\r\n\"seater\": 5,\r\n\"location\": \"Doddanekundi\",\r\n\"version\": \"petrol\",\r\n\"owner\": \"efg\",\r\n\"carStatus\": \"Sold Out\",\r\n\"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8085/api/v1/usedCars/5",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8085",
+                    "path": [
+                        "api",
+                        "v1",
+                        "usedCars",
+                        "5"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:8085/api/v1/usedCars",
+            "id": "b90844a8-3d6e-4884-b331-1f67679288ef",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [
+                        {
+                            "key": "password",
+                            "value": "Admin",
+                            "type": "string"
+                        },
+                        {
+                            "key": "username",
+                            "value": "Admin",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n\"carId\": 7,\r\n\"vehicleType\": \"sedan\",\r\n\"model\": \"zxi\",\r\n\"company\": \"mercedes\",\r\n\"price\": 5000000,\r\n\"carName\": \"benz\",\r\n\"bhp\": 2400,\r\n\"engineCapacity\": \"2400cc\",\r\n\"mileage\": 12,\r\n\"kmRun\": 1000,\r\n\"transmission\": \"manual\",\r\n\"color\": \"white\",\r\n\"seater\": 5,\r\n\"location\": \"Doddanekundi\",\r\n\"version\": \"petrol\",\r\n\"owner\": \"efg\",\r\n\"carStatus\": \"Sold Out\",\r\n\"dateTime\": \"2021-11-03T06:28:35.315+00:00\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:8085/api/v1/usedCars",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8085",
+                    "path": [
+                        "api",
+                        "v1",
+                        "usedCars"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:8085/api/v1/usedCars",
+            "id": "a46cd049-a476-4337-b275-b0ab207dee28",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [
+                        {
+                            "key": "password",
+                            "value": "Admin",
+                            "type": "string"
+                        },
+                        {
+                            "key": "username",
+                            "value": "Admin",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8085/api/v1/usedCars",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8085",
+                    "path": [
+                        "api",
+                        "v1",
+                        "usedCars"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:8085/api/v1/usedCars/3",
+            "id": "b9708d59-8fbc-40f4-a542-53773af1076d",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [
+                        {
+                            "key": "password",
+                            "value": "Admin",
+                            "type": "string"
+                        },
+                        {
+                            "key": "username",
+                            "value": "Admin",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8085/api/v1/usedCars/3",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8085",
+                    "path": [
+                        "api",
+                        "v1",
+                        "usedCars",
+                        "3"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
